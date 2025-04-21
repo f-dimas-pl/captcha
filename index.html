@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Jost:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="captcha">
+            <div class="captcha-wrapper">
+                <header class="captcha-header">
+                    <img class="captcha-header__logo" src="./img/logo.svg" alt="logo">
+                    <h1 class="captcha-header__title">Подтвердите, что Вы не робот</h1>
+                </header>
+                <div class="captcha-content">
+                    <p class="captcha__subtitle">Чтобы подтвердить, что вы не робот, введите текст с картинки:</p>
+                    <div class="captcha-preview">
+                        <p class="captcha-preview__code" id="captcha">ZKqW3Kxj</p>
+                    </div>
+                    <form class="captcha-form" action="">
+                        <input class="captcha-input" id="captcha-field" type="text" placeholder="Текст с картинки">
+                        <button class="captcha-change" id="captcha-change" type="reset">
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.3333 8.49998C13.3333 7.08549 12.7717 5.72869 11.7715 4.7285C10.7716 3.72861 9.4153 3.16699 8.00128 3.16665C6.49639 3.17262 5.05203 3.75998 3.97003 4.80597L3.60935 5.16665H5.33331C5.7015 5.16665 5.99998 5.46512 5.99998 5.83331C5.99998 6.2015 5.7015 6.49998 5.33331 6.49998H1.99998C1.63179 6.49998 1.33331 6.2015 1.33331 5.83331V2.49998C1.33331 2.13179 1.63179 1.83331 1.99998 1.83331C2.36817 1.83331 2.66665 2.13179 2.66665 2.49998V4.22394L3.03514 3.85545L3.29751 3.61326C4.59493 2.47467 6.26347 1.83986 7.99738 1.83331H7.99998L8.33071 1.84178C9.9784 1.92356 11.5421 2.61372 12.7142 3.78579C13.9644 5.03603 14.6666 6.73187 14.6666 8.49998C14.6666 8.86817 14.3682 9.16665 14 9.16665C13.6318 9.16665 13.3333 8.86817 13.3333 8.49998ZM14.6666 14.5C14.6666 14.8682 14.3682 15.1666 14 15.1666C13.6318 15.1666 13.3333 14.8682 13.3333 14.5V12.776L12.9648 13.1445L12.7025 13.3867C11.405 14.5253 9.73649 15.1601 8.00258 15.1666H7.99998C6.23187 15.1666 4.53603 14.4644 3.28579 13.2142C2.03554 11.9639 1.33331 10.2681 1.33331 8.49998C1.33331 8.13179 1.63179 7.83331 1.99998 7.83331C2.36817 7.83331 2.66665 8.13179 2.66665 8.49998C2.66665 9.91447 3.2283 11.2713 4.2285 12.2715C5.22823 13.2712 6.58424 13.8321 7.99803 13.8327C9.50315 13.8269 10.9478 13.2401 12.0299 12.194L12.3906 11.8333H10.6666C10.2985 11.8333 9.99998 11.5348 9.99998 11.1666C9.99998 10.7985 10.2985 10.5 10.6666 10.5H14C14.3682 10.5 14.6666 10.7985 14.6666 11.1666V14.5Z" fill="black"/>
+                            </svg>
+                            <span class="captcha-change__title">Сгенерировать новый</span>
+                        </button>
+                        <button class="captcha-button" type="submit">Подтвердить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="notifications">
+    </div>
+
+
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="js/modules/notification.js"></script>
+</body>
+</html>
