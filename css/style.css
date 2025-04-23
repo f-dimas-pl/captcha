@@ -86,7 +86,6 @@ body {
 }
 
 .captcha-preview__code {
-    font-family: 'Captcha Code';
     font-weight: 300;
     font-size: 24px;
     text-align: center;
