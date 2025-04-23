@@ -18,7 +18,7 @@ const propsNotification = {
 form.addEventListener('submit', function(e) {
     e.preventDefault()
 
-    if (captchaField.value === code) {
+    if (captchaField.value.trim() === code) {
         getNotificationType('success')
         createNotification(propsNotification)
     } else if (captchaField.value !== code && captchaField.value.trim().length > 0) {
