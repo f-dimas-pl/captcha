@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Captcha Code";
     font-style: normal;
-    font-weight: 400;
+    font-weight: normal;
     src: url('../fonts/captchacode.woff') format('woff');
 }

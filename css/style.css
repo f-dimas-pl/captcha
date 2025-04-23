@@ -86,7 +86,6 @@ body {
 }
 
 .captcha-preview__code {
-    font-family: 'Captcha Code';
     font-weight: 300;
     font-size: 24px;
     text-align: center;
@@ -242,4 +241,80 @@ body {
             linear-gradient(
                     to right, #0cb5e9, #22242f 30%
             );
+}
+
+@media (max-width: 800px) {
+    .notification__title {
+        font-size: 18px;
+    }
+
+    .notification__subtitle {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .captcha {
+        width: 400px;
+    }
+
+    .captcha-header__title {
+        font-size: 18px;
+    }
+
+    .captcha__subtitle {
+        font-size: 14px;
+        margin-bottom: 18px;
+    }
+
+    .captcha-preview {
+        height: 50px;
+        margin-bottom: 18px;
+    }
+
+    .captcha-preview__code {
+        font-size: 18px;
+    }
+
+    .captcha-input {
+        height: 50px;
+
+        &::placeholder {
+            font-size: 14px;
+        }
+    }
+
+    .captcha-button {
+        font-size: 14px;
+        padding: 16px;
+    }
+}
+
+@media (max-width: 500px) {
+    .captcha {
+        width: 100%;
+        min-height: 150px;
+    }
+}
+
+@media (max-width: 400px) {
+    .captcha {
+        height: 470px;
+    }
+
+    .captcha-header {
+        padding: 16px;
+    }
+
+    .captcha-header__title {
+        font-size: 16px;
+    }
+
+    .captcha-content {
+        padding: 16px;
+    }
+
+    .captcha-change__title {
+        font-size: 12px;
+    }
 }
