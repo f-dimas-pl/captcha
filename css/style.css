@@ -86,7 +86,6 @@ body {
 }
 
 .captcha-preview__code {
-    font-family: 'Captcha Code';
     font-weight: 300;
     font-size: 24px;
     text-align: center;
@@ -242,4 +241,24 @@ body {
             linear-gradient(
                     to right, #0cb5e9, #22242f 30%
             );
+}
+
+@media (max-width: 800px) {
+    .notification__title {
+        font-size: 18px;
+    }
+
+    .notification__subtitle {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .captcha {
+        width: 400px;
+    }
+}
+
+@media (max-width: 500px) {
+
 }
