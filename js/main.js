@@ -21,7 +21,7 @@ form.addEventListener('submit', function(e) {
     if (captchaField.value.trim() === code) {
         getNotificationType('success')
         createNotification(propsNotification)
-    } else if (captchaField.value !== code && captchaField.value.trim().length > 0) {
+    } else if (captchaField.value.trim() !== code && captchaField.value.trim().length > 0) {
         getNotificationType('error')
         createNotification(propsNotification)
         updateCode()
