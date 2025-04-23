@@ -294,6 +294,19 @@ body {
     .captcha {
         height: 500px;
     }
+
+    .notification {
+        width: 300px;
+        padding: 12px;
+    }
+
+    .notification__title {
+        font-size: 14px;
+    }
+
+    .notification__subtitle {
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 450px) {
