@@ -44,6 +44,8 @@ window.addEventListener('click', (event) => {
     }
 })
 
+window.addEventListener('selectstart', (event) => event.preventDefault())
+
 
 function getNotificationType (type) {
     switch(type) {
