@@ -296,3 +296,25 @@ body {
         min-height: 150px;
     }
 }
+
+@media (max-width: 400px) {
+    .captcha {
+        height: 470px;
+    }
+
+    .captcha-header {
+        padding: 16px;
+    }
+
+    .captcha-header__title {
+        font-size: 16px;
+    }
+
+    .captcha-content {
+        padding: 16px;
+    }
+
+    .captcha-change__title {
+        font-size: 12px;
+    }
+}
